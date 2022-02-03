@@ -1,7 +1,5 @@
-from itsdangerous import NoneAlgorithm
 import requests
 import json
-import webbrowser
 
 f = open('config.json')
 try:
