@@ -9,7 +9,7 @@ except json.JSONDecodeError:
     email, password=input('email: '), input('password: ')
     p = open("config.json", "w")
     login={"email": email, "password": password}
-    p.write(str(login))
+    json.dump(login, p) 
 
 
 voic=input("Put channel id: ")
